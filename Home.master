@@ -46,14 +46,14 @@
             </div>
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="nav navbar-nav menu">
-                <li><a href="about.html">About Us</a> </li>
-                <li><a href="services.html">Services</a> </li>
-                <li><a href="deals.html">Deals</a> </li>
-                <li><a href="insights.html">Insights</a> </li>
-				<li><a href="offer-documents.html">Offer Documents</a> </li>
-				<li><a href="media.html">Media</a> </li>
-				<li><a href="contact.html">Contact Us</a> </li>
-				<li><a href="#" class="">Wealth Management</a></li>
+                   <li class="active"><a href="index.aspx">Home</a> </li>
+                <li><a href="AboutUs.aspx">About Us</a> </li>
+                <li><a href="services.aspx">Services</a> </li>
+                <li><a href="deals.aspx">Deals</a> </li>
+                <li><a href="insights.aspx">Insights</a> </li>
+				<li><a href="media.aspx">Media</a> </li>
+				<li><a href="ContactUs.aspx">Contact Us</a> </li>
+				<li><a href="https://yesinvest.in/" class="">Wealth Management</a></li>
               </ul>
             </div>
           </nav>
