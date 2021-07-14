@@ -11,6 +11,8 @@ using Newtonsoft.Json;
 
 public partial class deals : System.Web.UI.Page
 {
+
+   public static string conn = System.Configuration.ConfigurationManager.ConnectionStrings["dbStringnew"].ConnectionString;
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -19,11 +21,9 @@ public partial class deals : System.Web.UI.Page
     [WebMethod(EnableSession = true)]
     public static string GetDealData(string DealType, string Sector)
     {
-
-       
         string DealJson = string.Empty;
         string flag = string.Empty;
-        var conn = System.Configuration.ConfigurationManager.ConnectionStrings["dbStringnew"].ConnectionString;
+       
         try
         {
             using (SqlConnection con = new SqlConnection(conn))
@@ -32,7 +32,6 @@ public partial class deals : System.Web.UI.Page
                 {
                     cmd.Connection = con;
                     cmd.CommandType = CommandType.StoredProcedure;
-
                     cmd.CommandText = "dbo.GetDealData";
                     cmd.Parameters.AddWithValue("@dealtype", SqlDbType.VarChar).Value = DealType;
                     cmd.Parameters.AddWithValue("@sector", SqlDbType.VarChar).Value = Sector;
@@ -43,7 +42,6 @@ public partial class deals : System.Web.UI.Page
 
                         DataSet ds = new DataSet();
                         adapter.Fill(ds);
-                      //  DealJson = Serialization.RsJsonSerializer.JsonSerializerObjectHd(ds);
                         DealJson = JsonConvert.SerializeObject(ds);
                     }
                 }
@@ -51,11 +49,11 @@ public partial class deals : System.Web.UI.Page
         }
         catch (Exception ex)
         {
-            // LogError.Log_Err("Deals Data Error", ex, LogLevel.Critical);
+           
            commonfunction.WriteLog("GetDealData exception", ex.ToString(), DateTime.Now,DateTime.Now);
             return "Error 404";
         }
-        //return DealJson;
+       
         return DealJson;
     }
 }

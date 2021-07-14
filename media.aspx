@@ -1,7 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.master" AutoEventWireup="true" CodeFile="media.aspx.cs" Inherits="media" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <script src="js/media.js"></script>
+
 </asp:Content>
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
@@ -21,15 +25,25 @@
       <div class="row deals_form">
         <div class="col-xs-6 col-sm-4 col-md-4 form-inline mob_pdb20">
           <label for="deal_type">Media Type</label>
-          <select class="form-control" id="deal_type">
+          <select class="form-control" id="media_type">
             <option selected="">Press Releases</option>
             <option>Coverage</option>
             <option>Articles</option>
           
           </select>
+            <br />
         </div>
 
-           <div class="top-deals" id="a">
+
+          <div class ="row mrt40">
+              <div class="col-md-12">
+
+                 
+   
+              </div>
+          </div>
+
+           <div class="top-deals mrt40" id="a">
              <div class="row equal-heightsmedia" style="display: block"></div>
            </div>
        

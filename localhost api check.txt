@@ -1,0 +1,6 @@
+http://localhost:52058//deals.aspx/GetDealData
+{"DealType":"all","Sector":"all"}
+
+{
+    "d": "{\"Table\":[{\"dealtype\":\"FCCB\",\"discription\":\"Domestic Advisor FCCB\",\"prices\":\"US$ 150 mn\",\"sector\":\"Pharmaceuticals and Chemicals\",\"title\":\"United Phosphorous Limited\",\"year\":\"2006\",\"createddate\":\"2021-07-14T16:29:29.803\"},{\"dealtype\":\"GDR Issuance\",\"discription\":\"Joint Book Runner to the GDR Issue\",\"prices\":\"US$ 108 mn\",\"sector\":\"Renewable Energy and Cleantech\",\"title\":\"Suzlon Energy Limited-2009\",\"year\":\"2009\",\"createddate\":\"2021-07-14T16:29:29.803\"},{\"dealtype\":\"GDR Issuance\",\"discription\":\"Advisor to the GDR Issue\",\"prices\":\"US$ 25 mn\",\"sector\":\"Food & Agri and Consumer Goods\",\"title\":\"Alps Industries\",\"year\":\"2006\",\"createddate\":\"2021-07-14T16:29:29.803\"}]}"
+}
