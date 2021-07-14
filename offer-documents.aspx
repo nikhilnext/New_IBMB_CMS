@@ -55,13 +55,15 @@ $(".header-bottom a").each(function () {
 	
 	</section> 
 
+      <br /><br />
+         <h1 class="main_hd text-center">Offer Documents</h1>
        <section class="container_sec">
 
        <div class="panel-group mrt40" id="accordion">
 
         <div class="panel panel-default">
         <div class="panel-heading">
-            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> Offer Documents</a> </h4>
+            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">  Public Issues – Equity</a> </h4>
           </div>
 
           <div id="collapse1" class="panel-collapse collapse in">
@@ -94,7 +96,7 @@ $(".header-bottom a").each(function () {
 
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed"> Public Issues – Equity</a> </h4>
+            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">  Public Issues – Debt</a> </h4>
           </div>
           <div id="collapse2" class="panel-collapse collapse">
             <div class="panel-body">
@@ -126,7 +128,7 @@ $(".header-bottom a").each(function () {
 
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed"> Public Issues – Debt</a> </h4>
+            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed"> others</a> </h4>
           </div>
           <div id="collapse3" class="panel-collapse collapse">
             <div class="panel-body">

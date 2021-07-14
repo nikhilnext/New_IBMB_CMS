@@ -46,7 +46,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="nav navbar-nav menu">
-                   <li class="active"><a href="index.aspx">Home</a> </li>
+                <li><a href="index.aspx">Home</a> </li>
                 <li><a href="AboutUs.aspx">About Us</a> </li>
                 <li><a href="services.aspx">Services</a> </li>
                 <li><a href="deals.aspx">Deals</a> </li>
@@ -93,13 +93,13 @@
     <div class="col-sm-12">
       <div class="footer_links">
         <ul class="regulatory_links form-group">
-         <li><a href="/Track_Record" target="_blank">Track Record</a></li>
+         <li><a href="track_record.aspx" target="_blank">Track Record</a></li>
     <li> | </li>
-    <li><a href="/offer-documents" target="_blank">Offer Documents</a></li>
+    <li><a href="offer-documents.aspx" target="_blank">Offer Documents</a></li>
     <li> | </li>
-    <li><a href="/privacy-policy-disclaimers" target="_blank">Privacy Policy &amp; Disclaimers</a></li>
+    <li><a href="privacy-policy-disclaimers.aspx" target="_blank">Privacy Policy &amp; Disclaimers</a></li>
     <li> | </li>
-    <li><a href="/standard-documents-policies" target="_blank">Standard Documents &amp; Policies</a></li>
+    <li><a href="standard-documents-policies.aspx" target="_blank">Standard Documents &amp; Policies</a></li>
     <li> | </li>
     <li><a href="mailto:careers@ysil.in">Careers</a></li>
     
