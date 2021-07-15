@@ -16,7 +16,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
 
+<!-- summernote start -->
 
+<link rel="stylesheet" type="text/css" href="all/codemirror.css"/>
+<link rel="stylesheet" type="text/css" href="all/monokai.css"/>
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" />
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+<!-- summernote end -->
 
 
     <asp:ContentPlaceHolder id="head" runat="server">
@@ -154,8 +163,34 @@ In case of any merchant banking related grievances / complaints, you may contact
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/IBMB.js"></script>
+<script src="js/publish.js"></script>
 
 
+    <script src="all/summernote.js"></script>
+<script src="all/summernote.min.js"></script>
+<script src="all/editor_summernote.js"></script>
+
+    <script>
+ $(document).ready(function(){
+
+ $('.summernote').summernote();
+
+	if ($(window).width() < 769) {
+		$('.navbar-toggle').click( function(event){
+			event.stopPropagation();
+			$(".navbar-collapse").toggleClass("in");
+			$(".overlay").toggleClass("block");
+			$("body").toggleClass("hide-overflow");
+		});
+
+		$(document).click( function(){
+			$(".navbar-collapse").removeClass("in");
+			$(".overlay").removeClass("block");
+			$("body").removeClass("hide-overflow");
+		});
+	}
+    })
+    </script>
 
 </body>
 </html>

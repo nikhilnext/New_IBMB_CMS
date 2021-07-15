@@ -2,13 +2,45 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
+    <script>
+$('.summernote').summernote({
+  height: 150,   //set editable area's height
+  codemirror: { // codemirror options
+    theme: 'monokai'
+  }
+});
+
+var edit = function() {
+  $('.click2edit').summernote({focus: true});
+};
+
+var save = function() {
+  var markup = $('.click2edit').summernote('code');
+  $('.click2edit').summernote('destroy');
+};
+
+</script>
 
    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container">
+   
+
+    <div class="container index_cms">
+        
         <div class="maincontainer">
+
+            <div class="row mrt40"> 
+
+                <div class="col-md-12" style="text-align: center;">
+                     <button id="Publish" class="btn btn-primary" style="margin-bottom: 20px;width: 100px;" onclick="publish('index','index_cms');" type="button">Publish</button>
+                    <br />
+                </div>
+                
+
+            </div>
+            
             <!-- Flexslider  -->
             <section id="hpbanner" class="flexslider">
                 <ul class="slides">
@@ -35,11 +67,14 @@
 
 
             <!-- 1 Main content -->
-            <section class="container_sec">
+            <section class="container_sec click2edit">
                 <p class="pdt20">
                     YES SECURITIES, a wholly-owned subsidiary of YES BANK, is one of the leading financial advisors in India, offering a gamut of services such as Investment Banking, Merchant Banking, Institutional and Equity Research, Institutional Sales, Portfolio Investment Advisory and Broking services. The firm has a robust track record of completing over 300 successful Investment Banking and Merchant Banking deals. YES SECURITIES is registered under Securities and Exchange Board of India (SEBI), National Stock Exchange (NSE), Bombay Stock Exchange (BSE), Multi Commodity Exchange (MCX) and National Commodity & Derivatives Exchange (NCDEX).
                 </p>
             </section>
+
+            	<button id="edit" class="btn btn-primary" onclick="edit()" type="button">Edit</button>
+<button id="save" class="btn btn-primary" onclick="save()" type="button">Save</button>
             <!--1 main end -->
 
             <!--2  Main content -->
